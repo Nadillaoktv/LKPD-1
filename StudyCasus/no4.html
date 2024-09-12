@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="">Status ayah*</label>
+        <br>
+        <input type="radio" name="hidup" id="hidup_ya" value="ya" onclick="showInput(this)">
+        <label for="hidup_ya">Masih Hidup</label>
+        <br>
+        <input type="radio" name="hidup" id="meninggal_tidak" value="tidak" onclick="showInput(this)">
+        <label for="meninggal_tidak">Meninggal</label>
+        <br>
+        <input type="radio" name="hidup" id="tidakdiketahui_tidak" value="tidakdik" onclick="showInput(this)">
+        <label for="tidakdiketahui_tidak">Tidak Diketahui</label>
+    </div>
+    <br>
+    <div id="wrap">
+        <div>
+            <label for="">Pendidikan Ayah*</label>
+            <br>
+            <select name="" id="">
+                <option value="">Pilih</option>
+                <option value="">SD</option>
+                <option value="">SMP</option>
+                <option value="">SMA</option>
+                <option value="">S1</option>
+                <option value="">S2</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Pekerjaan Ayah*</label>
+            <br>
+            <select name="" id="">
+                <option value="">Pilih</option>
+                <option value="">Kariyawan</option>
+                <option value="">Wirausaha</option>
+                <option value="">Wiraswasta</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Deskripsi Pekerjaan Ayah*</label>
+            <br>
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <label for="">Total Penghasilan Ayah Perbulan*</label>
+            <br>
+            <input type="number"><br>
+            <b>Bila tidak memiliki penghasilan tulis 0</b>
+        </div>
+        <br>
+        <div>
+            <label for="" id="ubah">Detail Ayah bekerja, berapa lama sudah bekerja, kondisi kesehetan, dan karir profesinya*</label>
+            <br>
+            <input type="text">
+        </div>
+    </div>
+
+
+    <script>
+        function showInput(e) {
+            let wrap = document.getElementById('wrap');
+            if(e.value == "ya") {
+                wrap.style.display = 'block';
+                document.getElementById("ubah").innerHTML = "Detail Ayah bekerja,berapa lama sudah bekerja,kondisi kesehetan,dan karir profesinya*"
+            }else if (e.value == "tidak") {
+                document.getElementById("ubah").innerHTML = "Detail Pekerjaan Ayah Semasa Hidup*"
+                wrap.style.display = 'block';
+            }else {
+                wrap.style.display = 'none';
+            }
+        }
+
+    
+    </script>
+</body>
+</html>

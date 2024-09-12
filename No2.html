@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja Online</title>
+    <style>
+       
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+            padding-left: 20px;
+            color: white;
+        }
+
+        img {
+            margin-left: 10px;
+        }
+
+        .menu {
+            float: right;
+        }
+        /* Main Content */
+        .container {
+            padding: 20px;
+        }
+        .product-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            margin-top: 15px;
+        }
+        .product p {
+            color: #555;
+        }
+        .product .stats {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #888;
+        }
+        .product .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .product .read-more:hover {
+            background-color: #555;
+        }
+
+        footer {
+    background-color: black;
+    padding: 80px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+.footer-contents h4 {
+    font-size: 20px;
+}
+.footer-contents p{
+    margin: 20px 50px 20px 0px;
+}
+.footer-contents li {
+    margin: 20px 50px 20px 0px;
+    text-decoration: none;
+    display: block;
+}
+.footer-contents a {
+    text-decoration: none;
+    color: white;
+}
+.logo-footer{
+    margin-bottom: 40px;
+}
+        @media (max-width: 768px) {
+            .product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img src="logo.png" style="width: 70px;">
+        <div class="logo">SWEET <br>TEARS</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="cookies.jpeg" alt="Produk A">
+                <h3>Cookies</h3>
+                <p>Cookies cokelat memiliki rasa manis yang kaya dengan sentuhan kelezatan cokelat yang khas. Rasa cokelatnya yang mendalam dan sedikit pahit berpadu sempurna dengan manisnya adonan, menciptakan keseimbangan rasa yang membuatnya digemari banyak orang.</p>
+                <div class="stats">
+                    <span>Total Pembelian: 1500</span> | <span>Total Like: 320</span>
+                </div>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="mochi.jpeg" alt="Produk B">
+                <h3>Mochi</h3>
+                <p>Mochi cokelat memiliki rasa manis yang lembut dengan sentuhan cokelat yang kaya. Tekstur mochi yang kenyal berpadu dengan isian cokelat yang lembut dan lumer di mulut, menciptakan sensasi yang unik dan memuaskan.</p>
+                <div class="stats">
+                    <span>Total Pembelian: 1200</span> | <span>Total Like: 280</span>
+                </div>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="brownis.jpeg" alt="Produk C">
+                <h3>Brownis</h3>
+                <p>Brownies cokelat memiliki rasa cokelat yang pekat dan kaya, dengan perpaduan manis dan sedikit pahit yang sempurna. Teksturnya biasanya padat namun lembut, dengan bagian atas yang sedikit renyah dan bagian dalam yang fudgy atau moist.</p>
+                <div class="stats">
+                    <span>Total Pembelian: 1000</span> | <span>Total Like: 250</span>
+                </div>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+
+   <!-- footer -->
+   <footer>
+    <div class="footer-contents">
+        <div class="logo-footer">
+            <h1 style="color: #ffffff;">SWEET <a style="color: #ad79b5;">TEARS</a></h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam deserunt, deleniti, quam tenetur quaerat enim odio ipsam optio, natus blanditiis rerum dolore veniam consequuntur delectus repellendus nemo eos nihil est.</p>
+    </div>
+    <div class="footer-contents">
+        <h4>Home</h4>
+        <li><a href="">About</a></li>
+        <li><a href="">Feature</a></li>
+        <li><a href="">Price</a></li>
+        <li><a href="">Contact : 081585819152</a></li>
+    </div>
+    <div class="footer-contents">
+        <h4>Help</h4>
+        <li><a href="">Privacy policy</a></li>
+        <li><a href="">Teams of use</a></li>
+    </div>
+    <div class="footer-contents">
+        <h4>Social</h4>
+        <li><a href="">Facebook : -</a></li>
+        <li><a href="">Twitter : -</a></li>
+        <li><a href="https://www.instagram.com/nadillaoktv_/">Instagram : nadillaoktv_</a></li>   
+    </div>
+</footer>
+
+</body>
+</html>

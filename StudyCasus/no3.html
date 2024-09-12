@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sd {
+            display: block;
+        }
+
+        #smp {
+            display: none;
+        }
+
+        #sma {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+        <label for="">Jenjang pendidikan</label>
+        <select name="" id="" onchange="changeOption(this)">
+            <option value="sd">SD/Sederajat</option>
+            <option value="smp">SMP/Sederajat</option>
+            <option value="sma">SMA/Sederajat</option>
+        </select>
+        </div>
+        <div id="">
+            <label for="">Tingkat Sekolah/Perguruan Tinggi</label>
+            <select name="" id="sd">   
+                <option value="">Pilih</option>            
+                <option value="">Kelas 1</option>
+                <option value="">Kelas 2</option>
+                <option value="">Kelas 3</option>
+                <option value="">Kelas 4</option>
+                <option value="">Kelas 5</option>
+                <option value="">Kelas 6</option>
+            </select>
+        </div>
+        <div id="">
+            <select name="" id="smp">
+            <option value="">Pilih</option>
+            <option value="">Kelas 7</option>
+            <option value="">Kelas 8</option>
+            <option value="">Kelas 9</option>
+            </select>
+        </div>
+        <div id="">
+            <select name="" id="sma">
+            <option value="">Pilih</option>
+            <option value="">Kelas 10</option>
+            <option value="">Kelas 11</option>
+            <option value="">Kelas 12</option>
+            </select>
+        </div>
+    </form>
+    <script>
+        function changeOption(e) {
+            if (e.value == "sd") {
+                document.getElementById("sd").style.display = "block";
+                document.getElementById("smp").style.display = "none";
+                document.getElementById("sma").style.display = "none";
+            } else if (e.value == "smp") {
+                document.getElementById("sd").style.display = "none";
+                document.getElementById("smp").style.display = "block";
+                document.getElementById("sma").style.display = "none";
+            } else {
+                document.getElementById("sd").style.display = "none";
+                document.getElementById("smp").style.display = "none";
+                document.getElementById("sma").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

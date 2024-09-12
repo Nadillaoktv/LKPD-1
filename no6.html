@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tanggal Display</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div>
+        <input type="date" id="inputDate">
+        <button onclick="search()">Submit</button>
+        <p id="result">Tidak mencari data...</p>
+    </div>
+
+    <script>
+        function search() {
+            const input = document.getElementById("inputDate").value;
+            const result = document.getElementById("result");
+
+            result.textContent = input ? `Mencari data tanggal ${input}` : "Tidak mencari data";
+            // result.style.color = "blue";
+        }
+</script>
+
+</body>
+</html>
